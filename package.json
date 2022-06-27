@@ -1,0 +1,46 @@
+{
+  "name": "vscode-marked",
+  "displayName": "Marked",
+  "description": "An alternative to the builtin markdown previewer.",
+  "version": "0.0.1",
+  "publisher": "hyrious",
+  "engines": {
+    "vscode": "^1.68.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:markdown",
+    "onCommand:vscode-marked.render"
+  ],
+  "main": "./dist/extension.js",
+  "browser": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-marked.render",
+        "title": "Marked: Render Markdown File"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "esbuild src/extension.ts --bundle --format=cjs --loader:.html=text --external:vscode --outdir=dist --minify --sourcemap --sources-content=false",
+    "watch": "esbuild --watch src/extension.ts --bundle --format=cjs --loader:.html=text --external:vscode --outdir=dist --minify --sourcemap --sources-content=false",
+    "lint": "eslint src --ext ts",
+    "run-in-browser": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=. ."
+  },
+  "dependencies": {
+    "@hyrious/marked-cli": "^0.2.7-vscode.1"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.68.0",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "@vscode/test-web": "^0.0.24",
+    "esbuild": "^0.14.47",
+    "eslint": "^8.18.0",
+    "typescript": "^4.7.4"
+  }
+}
