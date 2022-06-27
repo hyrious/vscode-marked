@@ -4,6 +4,7 @@
   "description": "An alternative to the builtin markdown previewer.",
   "version": "0.0.1",
   "publisher": "hyrious",
+  "repository": "hyrious/vscode-marked",
   "engines": {
     "vscode": "^1.68.0"
   },
