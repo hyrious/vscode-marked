@@ -2,7 +2,7 @@
   "name": "vscode-marked",
   "displayName": "Marked",
   "description": "An alternative to the builtin markdown previewer.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "icon": "logo.png",
   "publisher": "hyrious",
   "repository": "hyrious/vscode-marked",
@@ -34,7 +34,7 @@
     "run-in-browser": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=. ."
   },
   "dependencies": {
-    "@hyrious/marked-cli": "^0.2.8-vscode.0"
+    "@hyrious/marked-cli": "^0.2.8-vscode.1"
   },
   "devDependencies": {
     "@types/vscode": "^1.68.0",
@@ -43,6 +43,7 @@
     "@vscode/test-web": "^0.0.24",
     "esbuild": "^0.14.47",
     "eslint": "^8.18.0",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "vscode-uri": "^3.0.3"
   }
 }
