@@ -5,7 +5,10 @@
   "version": "0.0.5",
   "icon": "logo.png",
   "publisher": "hyrious",
-  "repository": "hyrious/vscode-marked",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hyrious/vscode-marked.git"
+  },
   "engines": {
     "vscode": "^1.70.0"
   },
