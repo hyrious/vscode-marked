@@ -2,7 +2,7 @@
   "name": "vscode-marked",
   "displayName": "Marked",
   "description": "An alternative to the builtin markdown previewer.",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "icon": "logo.png",
   "publisher": "hyrious",
   "repository": {
